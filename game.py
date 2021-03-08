@@ -23,7 +23,7 @@ class Game:
         self.ship_height = ship_image.get_rect().height
         self.hs = 0
 
-        self.sound = Sound(bg_music="sounds/startrektheme.wav")
+        self.sound = Sound(bg_music="sounds/toy_story_theme.wav")
         self.sound.play()
         self.sound.pause_bg()
         self.play_button = self.aliens = self.stats = self.sb = self.ship = None
