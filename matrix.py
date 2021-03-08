@@ -44,7 +44,7 @@ class Matrix:
     def __truediv__(self, o:float): return 1.0/o * self
 
     def __neg__(self):         # operator-
-        mat = copy(self)
+        mat = deepcopy(self)
         for i in range(len(self.cols)):
             mat.columns[i] *= -1
         return mat
